@@ -11,14 +11,16 @@ if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir, { recursive: true })
 }
 
+
+
 // 配置 multer 存储
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, uploadDir)
   },
   filename: (req, file, cb) => {
-    const uniqueName = `${Date.now()}-${Math.round(Math.random() * 1E9)}${path.extname(file.originalname)}`
-    cb(null, uniqueName)
+    // 使用原始文件名，不添加时间戳，确保跨机器可移植
+    cb(null, file.originalname)
   },
 })
 

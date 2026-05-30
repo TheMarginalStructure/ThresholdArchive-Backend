@@ -43,11 +43,8 @@ app.use('/api/v1/announcements', announcementsRoutes)
 app.use('/api/v1/upload', uploadRoutes)
 app.use('/api/v1/cms', cmsRoutes)
 
-// 静态文件服务（上传的图片）
+// 静态文件服务（上传的图片与视频）
 app.use('/api/v1/uploads', express.static(path.join(process.cwd(), 'uploads')))
-
-// 静态文件服务（种子数据引用的图片）
-app.use('/api/v1/assets', express.static(path.join(process.cwd(), 'public', 'assets')))
 
 // 404
 app.use((req, res) => {

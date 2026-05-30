@@ -76,7 +76,7 @@
     ],
     "finalReview": "陈维华博士",
     "reviewStatus": "通过",
-    "image": "/assets/TMS-O0442.png",
+    "image": "/api/v1/uploads/TMS-O0442.png",
     "remarks": "实验数据完整，建议定期复查安全协议的有效性。共鸣水晶实验成功评估了O-442-RES的基本特性和潜在风险，确认其具有可控的认知共鸣和现实扭曲能力。",
     "category": "实验记录",
     "experimentDate": "[数据删除]",

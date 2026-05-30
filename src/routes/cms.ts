@@ -9,7 +9,7 @@ router.get('/archives/:id', async (req, res) => {
     const id = parseInt(req.params.id)
     const archive = await prisma.archive.findUnique({
       where: { id },
-      include: { signatures: true },
+      include: { signatures: { include: { personnel: true } } },
     })
     if (!archive) return res.status(404).json({ error: 'Archive not found' })
     res.json(archive)
@@ -49,7 +49,7 @@ router.post('/archives', async (req, res) => {
             name: sig.name || '',
             esigCode: sig.esigCode || null,
             note: sig.note || null,
-            personnelId: sig.personId ? Number(sig.personId) : null,
+            personnelId: sig.personnelId ? Number(sig.personnelId) : null,
           })),
         } : undefined,
       },
@@ -97,7 +97,7 @@ router.put('/archives/:id', async (req, res) => {
           name: sig.name || '',
           esigCode: sig.esigCode || null,
           note: sig.note || null,
-          personnelId: sig.personId ? Number(sig.personId) : null,
+          personnelId: sig.personnelId ? Number(sig.personnelId) : null,
         })) : [],
       }
     }

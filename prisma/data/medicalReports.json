@@ -234,7 +234,7 @@
     ],
     "finalReview": "埃莉诺·肖博士 | [数据删除]",
     "reviewStatus": "通过",
-    "image": "/assets/TMS-L0734.png",
+    "image": "/api/v1/uploads/TMS-L0734.png",
     "remarks": "卡特博士的康复情况良好。然而，值得注意的是，在其后的任务评估中，他对涉及\"无序\"、\"堆积\"要素的阈界提案，表现出较任务前更为显著的谨慎甚至抵触态度。这并非病理性的，更像是一种基于创伤经验的、高度个人化的风险规避。建议在未来任务分配中考虑此因素。他比任何人都更清楚地知道，有些伤痕，即使愈合，也会改变一个人的形状。 —— 安雅·夏尔马",
     "category": "医疗报告",
     "executiveSummary": [
@@ -444,7 +444,7 @@
     ],
     "finalReview": "埃莉诺·肖博士 | [数据删除]",
     "reviewStatus": "通过",
-    "image": "/assets/TMS-E0771.png",
+    "image": "/api/v1/uploads/TMS-E0771.png",
     "remarks": "本报告为应对TMS-E0771威胁的核心医疗指导文件，建议定期更新治疗方案。 —— 埃莉诺·肖博士",
     "category": "医疗报告",
     "executiveSummary": [

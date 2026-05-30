@@ -38,7 +38,7 @@ const validAccessLevels = {
 
 // 状态标准化
 const statusMap = {
-  '活跃': '活跃',
+  '在档': '在档',
   '封存': '封存',
   '已收容': '封存',
   '收容': '封存',

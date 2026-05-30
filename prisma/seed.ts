@@ -100,7 +100,7 @@ async function main() {
   // ========== 4. 创建档案 ==========
   const archiveFiles = [
     { file: 'threatFiles.json', category: '阈界档案' },
-    { file: 'explorationLogs.json', category: '勘探实验记录' },
+    { file: 'explorationLogs.json', category: '勘探记录' },
     { file: 'incidentReports.json', category: '事件报告' },
     { file: 'communicationTranscripts.json', category: '事件通信' },
     { file: 'experimentLogs.json', category: '实验记录' },
@@ -120,7 +120,7 @@ async function main() {
         code: item.code,
         category: item.category || category,
         title: item.title,
-        status: item.status || '活跃',
+        status: item.status || '在档',
         threatLevel: item.threatLevel || null,
         threatLevelColor: item.threatLevelColor || null,
         archiveDate: parseDate(item.archiveDate),
@@ -150,7 +150,7 @@ async function main() {
           protocols: item.protocols, accessRequirements: item.accessRequirements,
           emergencyProcedures: item.emergencyProcedures, behaviorGuidelines: item.behaviorGuidelines,
         })
-      } else if (category === '勘探实验记录') {
+      } else if (category === '勘探记录') {
         Object.assign(details, {
           missionCode: item.missionCode, targetThreshold: item.targetThreshold,
           team: item.team, teamLeader: item.teamLeader,
@@ -238,31 +238,11 @@ async function main() {
 
       archiveData.details = details
 
-      const archive = await prisma.archive.upsert({
-        where: { code: item.code },
-        update: {
-          category: archiveData.category,
-          title: archiveData.title,
-          status: archiveData.status,
-          threatLevel: archiveData.threatLevel,
-          threatLevelColor: archiveData.threatLevelColor,
-          archiveDate: archiveData.archiveDate,
-          accessLevel: archiveData.accessLevel,
-          description: archiveData.description,
-          mainDangers: archiveData.mainDangers,
-          finalReview: archiveData.finalReview,
-          reviewStatus: archiveData.reviewStatus,
-          remarks: archiveData.remarks,
-          imagePath: archiveData.imagePath,
-          videoPath: archiveData.videoPath,
-          sourceDepartmentId: archiveData.sourceDepartmentId,
-          responsibleDepartmentId: archiveData.responsibleDepartmentId,
-          leadPersonId: archiveData.leadPersonId,
-          details: archiveData.details,
-          attachmentText: archiveData.attachmentText,
-        },
-        create: archiveData,
-      })
+      // 仅创建不存在的数据，不覆盖已有记录
+      let archive = await prisma.archive.findUnique({ where: { code: item.code } })
+      if (!archive) {
+        archive = await prisma.archive.create({ data: archiveData })
+      }
       createdArchives.push({ id: archive.id, code: archive.code, category: archive.category, title: archive.title })
       totalArchives++
     }

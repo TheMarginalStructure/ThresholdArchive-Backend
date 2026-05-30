@@ -16,7 +16,7 @@ router.get('/overview', async (req, res) => {
     prisma.archive.count(),
     prisma.personnel.count(),
     prisma.department.count(),
-    prisma.archive.count({ where: { status: '活跃' } }),
+    prisma.archive.count({ where: { status: '在档' } }),
     prisma.archive.count({ where: { status: '封存' } }),
     prisma.archive.count({ where: { status: '在档' } }),
   ])

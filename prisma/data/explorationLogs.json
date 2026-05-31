@@ -3,7 +3,7 @@
     "id": "EXP-O0881",
     "code": "EXP-O0881",
     "title": "勘探队织梦者队(Dreamweaver)对万花筒殿(TMS-O0881)首次勘探日志",
-    "status": "封存",
+    "status": "归档",
     "threatLevel": "琥珀色-C",
     "threatLevelColor": "琥珀色",
     "archiveDate": "[数据删除]",
@@ -223,7 +223,7 @@
     "id": "EXP-L0234",
     "code": "EXP-L0234",
     "title": "勘探队\"伽马\"(Gamma)对\"明知山\"(TMS-L0234)首次勘探日志",
-    "status": "在档",
+    "status": "归档",
     "threatLevel": "琥珀色-C",
     "threatLevelColor": "琥珀色",
     "archiveDate": "[数据删除]",
@@ -418,7 +418,7 @@
     "id": "EXP-L0734",
     "code": "EXP-L0734",
     "title": "勘探队\"伽马\"(Gamma)对囤积者回廊(TMS-L0734)首次勘探日志",
-    "status": "封存",
+    "status": "归档",
     "threatLevel": "黄色-CP",
     "threatLevelColor": "黄色",
     "archiveDate": "[数据删除]",
@@ -628,7 +628,7 @@
     "id": "EXP-E0771",
     "code": "EXP-E0771",
     "title": "勘探队\"守护者\"(Guardian)对\"悲鸣之云\"(TMS-E0771)首次勘探日志",
-    "status": "封存",
+    "status": "归档",
     "threatLevel": "琥珀色-C",
     "threatLevelColor": "琥珀色",
     "archiveDate": "[数据删除]",
@@ -829,7 +829,7 @@
     "id": "EXP-L0735",
     "code": "EXP-L0735",
     "title": "勘探队伽马队(Gamma)对深邃之海(TMS-L0735)勘探日志",
-    "status": "封存",
+    "status": "归档",
     "threatLevel": "琥珀色-C",
     "threatLevelColor": "琥珀色",
     "archiveDate": "2023-11-18",
@@ -1058,7 +1058,7 @@
     "id": "EXP-O0442",
     "code": "EXP-O0442",
     "title": "勘探队\"贝塔\"(Beta)对回音殿堂(TMS-O0442)首次勘探日志",
-    "status": "在档",
+    "status": "归档",
     "threatLevel": null,
     "threatLevelColor": "橙色",
     "archiveDate": "2023年11月5日",
@@ -1297,6 +1297,192 @@
       "协议制定：基于此次勘探经验制定\"回音殿堂\"专用操作协议",
       "设备改进：开发专用声学防护设备",
       "人员培训：对所有勘探队员进行声学异常应对培训"
+    ]
+  },
+  {
+    "id": "EXP-L0567",
+    "code": "EXP-L0567",
+    "title": "勘探队\"伽马\"对\"一神坠入\"(TMS-L0567)首次勘探日志",
+    "status": "归档",
+    "threatLevel": "红色-O",
+    "threatLevelColor": "红色",
+    "archiveDate": "[数据删除]",
+    "sourceDepartment": "外勤行动部",
+    "accessLevel": "5级",
+    "responsibleDepartment": "档案与研究部",
+    "leadPerson": "米拉·陈",
+    "lastUpdate": "[数据删除]",
+    "description": "本日志记录了勘探队\"伽马\"对一神坠入(TMS-L0567)的首次勘探行动。任务中队员萨拉·威尔逊遭受严重宗教创伤，出现\"遗言接收\"症状，导致心理结构发生永久性改变。",
+    "mainDangers": [
+      "宗教创伤",
+      "认知污染",
+      "堕落迷恋症候群"
+    ],
+    "missionCode": "神明坠落调查 (Falling God Survey)",
+    "targetThreshold": "TMS-L0567",
+    "team": "伽马队",
+    "teamLeader": "米拉·陈",
+    "explorationDate": "[数据删除]",
+    "missionStatus": "已完成 — 人员心理创伤",
+    "missionOverview": "勘探队\"伽马\"对一神坠入(TMS-L0567)的首次勘探行动。任务于[数据删除]年在[数据删除]高原的天文考古调查中启动。当晚队员杰克·布朗首次目击了完整的\"神明坠落\"现象。",
+    "teamMembers": [
+      {
+        "role": "队长",
+        "name": "米拉·陈",
+        "field": "勘探指挥",
+        "clearance": "5级"
+      },
+      {
+        "role": "队员",
+        "name": "萨拉·威尔逊",
+        "field": "天文考古",
+        "clearance": "4级"
+      },
+      {
+        "role": "技术专员",
+        "name": "艾萨克·韦伯",
+        "field": "设备技术",
+        "clearance": "4级"
+      },
+      {
+        "role": "医疗评估员",
+        "name": "保罗·罗德里格斯博士",
+        "field": "心理医学",
+        "clearance": "5级"
+      }
+    ],
+    "equipment": [
+      {
+        "name": "标准天文考古装备包"
+      },
+      {
+        "name": "红外夜视记录仪"
+      },
+      {
+        "name": "生物计量监测传感器"
+      },
+      {
+        "name": "紧急撤离装置"
+      },
+      {
+        "name": "心理评估工具包"
+      }
+    ],
+    "timeline": [
+      {
+        "timestamp": "Day 0",
+        "phase": "发现",
+        "event": "伽马队发现遗迹入口",
+        "status": "正常",
+        "note": "天文考古调查"
+      },
+      {
+        "timestamp": "Day 1",
+        "phase": "目击",
+        "event": "萨拉·威尔逊目击完整坠落现象",
+        "status": "轻微异常",
+        "note": "开始出现宗教创伤症状"
+      },
+      {
+        "timestamp": "Day 3",
+        "phase": "感染",
+        "event": "萨拉·威尔逊\"听到神的最后话语\"",
+        "status": "异常",
+        "note": "开始复述异常信息"
+      },
+      {
+        "timestamp": "Day 7",
+        "phase": "恶化",
+        "event": "萨拉·威尔逊进入\"堕落迷恋\"状态",
+        "status": "严重异常",
+        "note": "拒绝离开观测台"
+      },
+      {
+        "timestamp": "Day 12",
+        "phase": "撤离",
+        "event": "紧急心理干预后成功撤离",
+        "status": "危险状态",
+        "note": "留有严重心理创伤"
+      },
+      {
+        "timestamp": "Day 30",
+        "phase": "定级",
+        "event": "完成威胁等级评估",
+        "status": "已完成",
+        "note": "定级为红色-O"
+      }
+    ],
+    "discoveries": [
+      {
+        "type": "神明坠落现象",
+        "description": "夜间出现巨大坠落人形轮廓，持续6-8小时",
+        "threatLevel": "极高"
+      },
+      {
+        "type": "神性失落效应",
+        "description": "观察者产生深刻的宗教创伤",
+        "threatLevel": "极高"
+      },
+      {
+        "type": "遗言接收",
+        "description": "部分暴露者接收到\"神明遗言\"",
+        "threatLevel": "极高"
+      }
+    ],
+    "analysis": {
+      "completionRate": "95%",
+      "personnelStatus": "萨拉·威尔逊遭受严重宗教创伤",
+      "dataRecoveryRate": "完整",
+      "coreMechanismConfirmed": "红色-O级存在性威胁",
+      "theoreticalResearch": "\"神明坠落\"理论模型建立"
+    },
+    "lessons": [
+      "神明坠落的心理影响远超预期，暴露者的宗教创伤具有感染性",
+      "视觉接触是主要触发机制，光学干扰可有效阻断",
+      "遗言接收是最危险的阶段，一旦出现必须立即撤离"
+    ],
+    "safetyRecommendations": [
+      {
+        "type": "时间隔离",
+        "measures": "日落至日出期间完全封锁"
+      },
+      {
+        "type": "视觉防护",
+        "measures": "配备自动光学干扰系统"
+      },
+      {
+        "type": "人员筛选",
+        "measures": "通过宗教创伤抗性测试"
+      },
+      {
+        "type": "实验限制",
+        "measures": "夜间观测不超过5分钟"
+      }
+    ],
+    "followUpActions": [
+      "建立永久性夜间封锁协议",
+      "开发视觉屏障系统",
+      "制定宗教创伤应急治疗方案"
+    ],
+    "relatedArchives": [
+      {
+        "code": "TMS-L0567",
+        "type": "阈界档案",
+        "title": "一神坠入",
+        "relation": "主体阈界"
+      },
+      {
+        "code": "MED-L0567",
+        "type": "医疗报告",
+        "title": "认知影响分析报告",
+        "relation": "人员心理评估"
+      },
+      {
+        "code": "THY-L0567",
+        "type": "理论文件",
+        "title": "\"神明坠落\"理论模型",
+        "relation": "异常机制分析"
+      }
     ]
   }
 ]

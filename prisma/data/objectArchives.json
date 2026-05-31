@@ -1,0 +1,54 @@
+[
+  {
+    "id": "OBJ-O0442-01",
+    "code": "OBJ-O0442-01",
+    "title": "共鸣水晶 (Resonance Crystal)",
+    "status": "归档",
+    "sourceThreshold": "TMS-O0442 / 回音殿堂",
+    "threatLevel": "黄色-CP",
+    "threatLevelColor": "黄色",
+    "archiveDate": "[数据删除]",
+    "sourceDepartment": "外勤行动部 / 勘探队\"Beta\"",
+    "accessLevel": "3级",
+    "responsibleDepartment": "档案与研究部",
+    "leadPerson": "艾德里安·克拉克",
+    "lastUpdate": "2024年1月15日",
+    "description": "TMS-O0442-01是一系列发现于阈界\"回音殿堂\"(O442-LND)内的异常水晶体。这些水晶呈现半透明的深蓝色，高度约15-30厘米，具有复杂的几何结构。当受到声波刺激时，水晶会产生强烈的共振现象，并释放出具有认知影响的次声波。",
+    "mainDangers": [
+      "声波共振、认知扭曲、空间不稳定、实体召唤",
+      "听觉损伤、记忆混乱、时间感知异常"
+    ],
+    "properties": [
+      {
+        "category": "物理属性",
+        "name": "材质",
+        "description": "未知晶体结构，硬度约为7-8（莫氏硬度）",
+        "scope": "单个水晶"
+      },
+      {
+        "category": "物理属性",
+        "name": "颜色",
+        "description": "深蓝色至靛蓝色，内部有流动光纹",
+        "scope": "单个水晶"
+      },
+      {
+        "category": "物理属性",
+        "name": "尺寸",
+        "description": "高15-30cm，底部直径8-15cm",
+        "scope": "单个水晶"
+      },
+      {
+        "category": "物理属性",
+        "name": "重量",
+        "description": "2.3-4.7kg",
+        "scope": "单个水晶"
+      },
+      {
+        "category": "物理属性",
+        "name": "温度",
+        "description": "恒定保持在12-15°C",
+        "scope": "单个水晶"
+      }
+    ]
+  }
+]

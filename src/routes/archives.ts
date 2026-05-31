@@ -3,6 +3,37 @@ import { prisma } from '../lib/prisma'
 
 const router = Router()
 
+// 类别列表（去重统计 + 编码映射）
+router.get('/categories', async (_req, res) => {
+  const categoryCodeMap: Record<string, string> = {
+    '阈界档案': 'TMS',
+    '对象档案': 'OBJ',
+    '勘探记录': 'EXP',
+    '事件报告': 'EVT',
+    '事件通信': 'COM',
+    '人事档案': 'HR',
+    '医疗报告': 'MED',
+    '实验记录': 'EL',
+    '理论文件': 'THY',
+    '协议手册': 'PRT',
+  }
+  try {
+    const grouped = await prisma.archive.groupBy({
+      by: ['category'],
+      _count: { id: true },
+      orderBy: { _count: { id: 'desc' } },
+    })
+    const categories = grouped.map(g => ({
+      category: g.category,
+      code: categoryCodeMap[g.category] || g.category.slice(0, 3).toUpperCase(),
+      count: g._count.id,
+    }))
+    res.json(categories)
+  } catch (err: any) {
+    res.status(500).json({ error: err.message })
+  }
+})
+
 // 列表（支持多维度筛选）
 router.get('/', async (req, res) => {
   const { category, status, threatLevel, sourceDeptId, respDeptId, leadPersonId, search, page = '1', limit = '20' } = req.query

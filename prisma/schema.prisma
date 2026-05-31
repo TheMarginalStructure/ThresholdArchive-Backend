@@ -66,7 +66,7 @@ model Archive {
   code                    String   @unique
   category                String
   title                   String
-  status                  String   @default("在档")
+  status                  String   @default("活跃")
   threatLevel             String?  @map("threat_level")
   threatLevelColor        String?  @map("threat_level_color")
   archiveDate             DateTime? @map("archive_date")

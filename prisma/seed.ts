@@ -100,6 +100,7 @@ async function main() {
   // ========== 4. 创建档案 ==========
   const archiveFiles = [
     { file: 'threatFiles.json', category: '阈界档案' },
+    { file: 'objectArchives.json', category: '对象档案' },
     { file: 'explorationLogs.json', category: '勘探记录' },
     { file: 'incidentReports.json', category: '事件报告' },
     { file: 'communicationTranscripts.json', category: '事件通信' },
@@ -120,7 +121,7 @@ async function main() {
         code: item.code,
         category: item.category || category,
         title: item.title,
-        status: item.status || '在档',
+        status: item.status || '活跃',
         threatLevel: item.threatLevel || null,
         threatLevelColor: item.threatLevelColor || null,
         archiveDate: parseDate(item.archiveDate),

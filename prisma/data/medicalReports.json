@@ -3,7 +3,7 @@
     "id": "MED-P0990",
     "code": "MED-P0990",
     "title": "关于TMS-V0990 (\"永夜钟楼\") 模因感染现象的心理危害评估报告",
-    "status": "在档",
+    "status": "归档",
     "threatLevel": "琥珀色-C",
     "threatLevelColor": "琥珀色",
     "archiveDate": "[数据删除]",
@@ -189,7 +189,7 @@
     "id": "MED-L0734",
     "code": "MED-L0734",
     "title": "TMS-L0734勘探任务后心理评估报告",
-    "status": "封存",
+    "status": "归档",
     "threatLevel": null,
     "threatLevelColor": "不适用",
     "archiveDate": "[勘探任务结束后第14日]",
@@ -405,7 +405,7 @@
     "id": "MED-E0771",
     "code": "MED-E0771",
     "title": "\"悲鸣\"模因的音频频谱分析与心理影响评估",
-    "status": "在档",
+    "status": "归档",
     "threatLevel": "琥珀色-C",
     "threatLevelColor": "琥珀色",
     "archiveDate": "[数据删除]",
@@ -583,6 +583,162 @@
       {
         "code": "C",
         "content": "治疗案例记录与效果评估"
+      }
+    ]
+  },
+  {
+    "id": "MED-L0567",
+    "code": "MED-L0567",
+    "title": "一神坠入(TMS-L0567)暴露人员心理评估报告",
+    "status": "归档",
+    "threatLevel": "红色-O",
+    "threatLevelColor": "红色",
+    "archiveDate": "[数据删除]",
+    "sourceDepartment": "医疗与心理部",
+    "accessLevel": "5级",
+    "responsibleDepartment": null,
+    "leadPerson": "保罗·罗德里格斯博士",
+    "lastUpdate": "[数据删除]",
+    "description": "本报告详细评估了一神坠入(TMS-L0567)暴露人员的心理影响。暴露者出现急性宗教创伤后应激障碍（AR-PTSD），表现为宗教符号恐惧、\"堕落\"概念迷恋和夜间噩梦。",
+    "mainDangers": [
+      "宗教创伤",
+      "认知污染",
+      "堕落迷恋"
+    ],
+    "executiveSummary": [
+      {
+        "item": "暴露疾病",
+        "conclusion": "急性宗教创伤后应激障碍(AR-PTSD)"
+      },
+      {
+        "item": "主要症状",
+        "conclusion": "宗教符号恐惧、\"堕落\"概念迷恋、夜间噩梦"
+      },
+      {
+        "item": "传染性",
+        "conclusion": "可通过共情和模仿传播"
+      },
+      {
+        "item": "预后",
+        "conclusion": "持续21天治疗后症状缓解，留有永久性创伤"
+      }
+    ],
+    "mechanismAnalysis": [
+      {
+        "dimension": "触发机制",
+        "description": "视觉接触\"神明坠落\"现象"
+      },
+      {
+        "dimension": "发展阶段",
+        "description": "初始暴露→神性共鸣→遗言接收→创伤固化"
+      },
+      {
+        "dimension": "感染途径",
+        "description": "遗言复述、宗教创伤共情传播"
+      }
+    ],
+    "coreHazards": [
+      {
+        "type": "宗教创伤",
+        "mechanism": "对一切神圣概念的彻底质疑"
+      },
+      {
+        "type": "认知污染",
+        "mechanism": "\"神明遗言\"包含现实结构质疑内容"
+      }
+    ],
+    "clinicalStages": [
+      {
+        "stage": "初始暴露",
+        "timeFeature": "T+0-30min",
+        "symptoms": "目击坠落轮廓",
+        "psychologicalImpact": "心理防线降低",
+        "physiologicalBasis": "瞳孔放大、心率升高"
+      },
+      {
+        "stage": "神性共鸣",
+        "timeFeature": "T+30min-2h",
+        "symptoms": "感受\"神性失落\"",
+        "psychologicalImpact": "开始共情坠落实体",
+        "physiologicalBasis": "情绪剧烈波动"
+      },
+      {
+        "stage": "遗言接收",
+        "timeFeature": "T+2-4h",
+        "symptoms": "\"听到\"神明遗言",
+        "psychologicalImpact": "信息污染侵入",
+        "physiologicalBasis": "语言模式改变"
+      },
+      {
+        "stage": "创伤固化",
+        "timeFeature": "T+4h+",
+        "symptoms": "宗教创伤形成",
+        "psychologicalImpact": "神圣概念永久性质疑",
+        "physiologicalBasis": "认知结构改变"
+      }
+    ],
+    "treatmentDifficulties": [
+      {
+        "type": "感染性传播",
+        "description": "创伤可通过共情传播给治疗师"
+      },
+      {
+        "type": "遗言顽固性",
+        "description": "\"神明遗言\"内容在患者记忆中高度固化"
+      }
+    ],
+    "treatmentPlans": [
+      {
+        "stage": "急性期",
+        "target": "稳定症状",
+        "method": "药物干预+隔离",
+        "measures": "抗焦虑药物，禁止接触宗教相关内容"
+      },
+      {
+        "stage": "恢复期",
+        "target": "创伤处理",
+        "method": "认知行为疗法",
+        "measures": "逐步脱敏治疗，重建信仰框架"
+      },
+      {
+        "stage": "巩固期",
+        "target": "预防复发",
+        "method": "长期跟踪",
+        "measures": "定期心理评估，建立支持网络"
+      }
+    ],
+    "recommendations": [
+      {
+        "type": "人员筛查",
+        "measures": "通过宗教创伤抗性测试"
+      },
+      {
+        "type": "暴露限制",
+        "measures": "夜间观测不超过5分钟，全程医疗监控"
+      },
+      {
+        "type": "后续跟踪",
+        "measures": "暴露人员接受至少6个月定期心理评估"
+      }
+    ],
+    "relatedArchives": [
+      {
+        "code": "TMS-L0567",
+        "type": "阈界档案",
+        "title": "一神坠入",
+        "relation": "主体阈界"
+      },
+      {
+        "code": "EXP-L0567",
+        "type": "勘探记录",
+        "title": "伽马队首次勘探",
+        "relation": "暴露事件记录"
+      },
+      {
+        "code": "THY-L0567",
+        "type": "理论文件",
+        "title": "\"神明坠落\"理论模型",
+        "relation": "机制分析参考"
       }
     ]
   }

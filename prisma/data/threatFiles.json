@@ -3,7 +3,7 @@
     "id": "TMS-O0881",
     "code": "TMS-O0881",
     "title": "万花筒殿 (Kaleidoscope Palace)",
-    "status": "在档",
+    "status": "活跃",
     "threatLevel": "琥珀色-C",
     "threatLevelColor": "琥珀色",
     "archiveDate": "[数据删除]",
@@ -312,7 +312,7 @@
     "id": "TMS-L0234",
     "code": "TMS-L0234",
     "title": "明知山 (The Mountain of Knowing)",
-    "status": "在档",
+    "status": "活跃",
     "threatLevel": "琥珀色-C",
     "threatLevelColor": "琥珀色",
     "archiveDate": "[数据删除]",
@@ -503,7 +503,7 @@
     "id": "TMS-L0734",
     "code": "TMS-L0734",
     "title": "囤积者回廊 (The Hoarder's Corridor)",
-    "status": "在档",
+    "status": "活跃",
     "threatLevel": "黄色-CP",
     "threatLevelColor": "黄色",
     "archiveDate": "[数据删除]",
@@ -709,7 +709,7 @@
     "id": "TMS-E0771",
     "code": "TMS-E0771",
     "title": "生物侵蚀模因载体 (Bio-Erosive Memetic Carrier)",
-    "status": "在档",
+    "status": "活跃",
     "threatLevel": "琥珀色-C",
     "threatLevelColor": "琥珀色",
     "archiveDate": "[数据删除]",
@@ -1153,7 +1153,7 @@
     "id": "TMS-L0735",
     "code": "TMS-L0735",
     "title": "深邃之海 (The Deep Oceanic Simulacrum)",
-    "status": "在档",
+    "status": "活跃",
     "threatLevel": "琥珀色-C",
     "threatLevelColor": "琥珀色",
     "archiveDate": "[数据删除]",
@@ -1315,256 +1315,6 @@
     "accessRequirements": [],
     "emergencyProcedures": [],
     "behaviorGuidelines": []
-  },
-  {
-    "id": "TMS-O0442-01",
-    "code": "TMS-O0442-01",
-    "title": "共鸣水晶 (Resonance Crystal)",
-    "status": "在档",
-    "threatLevel": "黄色-CP",
-    "threatLevelColor": "黄色",
-    "archiveDate": "[数据删除]",
-    "sourceDepartment": "外勤行动部 / 勘探队\"Beta\"",
-    "accessLevel": "3级",
-    "responsibleDepartment": "档案与研究部",
-    "leadPerson": "艾德里安·克拉克",
-    "lastUpdate": "2024年1月15日",
-    "description": "TMS-O0442-01是一系列发现于阈界\"回音殿堂\"(O442-LND)内的异常水晶体。这些水晶呈现半透明的深蓝色，高度约15-30厘米，具有复杂的几何结构。当受到声波刺激时，水晶会产生强烈的共振现象，并释放出具有认知影响的次声波。",
-    "mainDangers": [
-      "声波共振、认知扭曲、空间不稳定、实体召唤",
-      "听觉损伤、记忆混乱、时间感知异常"
-    ],
-    "relatedArchives": [
-      {
-        "code": "EXP-O0442",
-        "type": "勘探记录",
-        "title": "勘探队\"Beta\"回音殿堂探索记录",
-        "relation": "发现记录"
-      },
-      {
-        "code": "EXP-O0442-S2",
-        "type": "实验记录",
-        "title": "共鸣水晶声波共振实验",
-        "relation": "研究数据"
-      },
-      {
-        "code": "PRT-0003",
-        "type": "协议手册",
-        "title": "实验室安全操作规程",
-        "relation": "安全协议"
-      },
-      {
-        "code": "MED-O0442",
-        "type": "医疗报告",
-        "title": "马克·陈听觉异常评估报告",
-        "relation": "相关案例"
-      }
-    ],
-    "signatures": [
-      {
-        "position": "首席档案员",
-        "name": "安雅·夏尔马",
-        "signature": "[ESIG-AS]",
-        "date": "[数据删除]",
-        "note": "阈界档案撰写人"
-      },
-      {
-        "position": "副部长",
-        "name": "戴维·卡特博士",
-        "signature": "[ESIG-DC]",
-        "date": "[数据删除]",
-        "note": "审阅批准"
-      }
-    ],
-    "finalReview": "艾德里安·克拉克 | [数据删除]",
-    "reviewStatus": "通过",
-    "image": "/api/v1/uploads/TMS-O0442.png",
-    "remarks": "共鸣水晶的异常性质仍在研究中。建议加强对\"回音殿堂\"的监控，防止更多水晶被意外激活。—— 安雅·夏尔马",
-    "category": "阈界档案",
-    "commonName": "共鸣水晶 (Resonance Crystal)",
-    "archiveNature": "异常水晶体，具有声波共振和认知影响特性",
-    "coreFeatures": "声波共振、认知影响、空间扭曲、实体召唤",
-    "properties": [
-      {
-        "category": "物理属性",
-        "name": "材质",
-        "description": "未知晶体结构，硬度约为7-8（莫氏硬度）",
-        "scope": "单个水晶"
-      },
-      {
-        "category": "物理属性",
-        "name": "颜色",
-        "description": "深蓝色至靛蓝色，内部有流动光纹",
-        "scope": "单个水晶"
-      },
-      {
-        "category": "物理属性",
-        "name": "尺寸",
-        "description": "高15-30cm，底部直径8-15cm",
-        "scope": "单个水晶"
-      },
-      {
-        "category": "物理属性",
-        "name": "重量",
-        "description": "2.3-4.7kg",
-        "scope": "单个水晶"
-      },
-      {
-        "category": "物理属性",
-        "name": "温度",
-        "description": "恒定保持在12-15°C",
-        "scope": "单个水晶"
-      }
-    ],
-    "phases": [
-      {
-        "name": "声波共振",
-        "duration": "即时",
-        "mechanism": "对特定频率(432Hz, 528Hz, 741Hz)的声波极度敏感",
-        "manifestation": "产生强烈的共振现象，并释放具有认知影响的次声波",
-        "target": "声波刺激源",
-        "keyIndicator": "共振现象和次声波释放"
-      },
-      {
-        "name": "认知影响",
-        "duration": "长期暴露",
-        "mechanism": "长期暴露会导致\"音乐性幻觉\"和\"和谐强迫症\"",
-        "manifestation": "听觉损伤、记忆混乱、时间感知异常",
-        "target": "长期暴露人员",
-        "keyIndicator": "音乐性幻觉和和谐强迫症"
-      },
-      {
-        "name": "空间扭曲",
-        "duration": "激活状态",
-        "mechanism": "激活状态下会在周围3米范围内产生轻微的空间波动",
-        "manifestation": "空间迷失和方向感丧失",
-        "target": "激活状态周围区域",
-        "keyIndicator": "周围3米范围内空间波动"
-      },
-      {
-        "name": "实体召唤",
-        "duration": "高强度共振",
-        "mechanism": "高强度共振可能引发\"回音实体\"的出现",
-        "manifestation": "半透明的人形轮廓，由声波纹理构成",
-        "target": "高强度共振区域",
-        "keyIndicator": "回音实体出现"
-      }
-    ],
-    "environmentFeatures": {
-      "physical": [
-        "材质：未知晶体结构，硬度约为7-8（莫氏硬度）",
-        "颜色：深蓝色至靛蓝色，内部有流动光纹",
-        "尺寸：高15-30cm，底部直径8-15cm",
-        "重量：2.3-4.7kg",
-        "温度：恒定保持在12-15°C"
-      ],
-      "cognitive": [
-        "声波共振：对特定频率(432Hz, 528Hz, 741Hz)的声波极度敏感",
-        "认知影响：长期暴露会导致\"音乐性幻觉\"和\"和谐强迫症\"",
-        "空间扭曲：激活状态下会在周围3米范围内产生轻微的空间波动",
-        "实体召唤：高强度共振可能引发\"回音实体\"的出现"
-      ]
-    },
-    "knownEntities": [
-      {
-        "name": "回音实体 (Echo Entities)",
-        "type": "声波构成实体",
-        "behavior": "重复勘探队员的动作和声音，持续时间3-7分钟",
-        "mechanism": "半透明的人形轮廓，由声波纹理构成",
-        "dangerLevel": "低（主要为心理威胁）",
-        "contactRecord": "停止一切声音输出，等待自然消散"
-      }
-    ],
-    "discoveryLocation": "阈界\"回音殿堂\"(O-442-RES)中央大厅",
-    "anomalyReport": "勘探队\"Beta\"在对O-442-RES进行例行勘探时，在中央大厅发现了7块共鸣水晶。初次接触时，队员马克·陈无意中发出的口哨声触发了水晶共振，导致整个勘探队出现短暂的听觉异常和空间迷失。",
-    "responseTeam": "勘探队\"Beta\"",
-    "threatAssessments": [],
-    "protocols": [
-      {
-        "phase": "存储",
-        "procedureName": "隔音存储",
-        "measures": "共鸣水晶必须存放在隔音实验室内，存储环境需保持绝对静音（噪音水平<20分贝）",
-        "department": "档案与研究部"
-      },
-      {
-        "phase": "研究",
-        "procedureName": "研究规程",
-        "measures": "所有接触人员必须通过3级心理评估，必须佩戴专用降噪耳机和认知防护头盔，单次接触时间不得超过30分钟",
-        "department": "档案与研究部"
-      },
-      {
-        "phase": "紧急",
-        "procedureName": "静音协议(SILENCE)",
-        "measures": "立即切断所有音频设备电源，启动紧急隔离系统，疏散半径50米内所有人员",
-        "department": "安全与防护部"
-      }
-    ],
-    "accessRequirements": [
-      {
-        "allowed": true,
-        "text": "所有接触人员必须通过3级心理评估"
-      },
-      {
-        "allowed": true,
-        "text": "必须佩戴专用降噪耳机和认知防护头盔"
-      },
-      {
-        "allowed": true,
-        "text": "单次接触时间不得超过30分钟"
-      },
-      {
-        "allowed": true,
-        "text": "实验过程需有医疗人员现场待命"
-      }
-    ],
-    "emergencyProcedures": [
-      {
-        "allowed": true,
-        "text": "立即切断所有音频设备电源"
-      },
-      {
-        "allowed": true,
-        "text": "启动紧急隔离系统"
-      },
-      {
-        "allowed": true,
-        "text": "疏散半径50米内所有人员"
-      },
-      {
-        "allowed": true,
-        "text": "通知医疗部门准备认知污染治疗"
-      },
-      {
-        "allowed": true,
-        "text": "联系\"堡垒\"进行现场评估"
-      }
-    ],
-    "behaviorGuidelines": [
-      {
-        "allowed": true,
-        "text": "保持绝对安静"
-      },
-      {
-        "allowed": true,
-        "text": "使用手势或书面交流"
-      },
-      {
-        "allowed": true,
-        "text": "定期进行心理状态检查"
-      },
-      {
-        "allowed": false,
-        "text": "禁止在实验区域内说话、唱歌或制造噪音"
-      },
-      {
-        "allowed": false,
-        "text": "禁止携带任何音频播放设备"
-      },
-      {
-        "allowed": false,
-        "text": "禁止单独进入实验区域"
-      }
-    ]
   },
   {
     "id": "TMS-R0009",
@@ -1783,7 +1533,7 @@
     "id": "TMS-T0112",
     "code": "TMS-T0112",
     "title": "静默车站 (The Silent Station)",
-    "status": "在档",
+    "status": "活跃",
     "threatLevel": "黄色-CP",
     "threatLevelColor": "黄色",
     "archiveDate": "2024-08-01",
@@ -2074,5 +1824,177 @@
         "text": "独自进入站台"
       }
     ]
+  },
+  {
+    "id": "TMS-L0567",
+    "code": "TMS-L0567",
+    "title": "一神坠入 (The Falling God)",
+    "status": "活跃",
+    "threatLevel": "红色-O",
+    "threatLevelColor": "红色",
+    "archiveDate": "[数据删除]",
+    "sourceDepartment": "外勤行动部 / 勘探队\"伽马\"",
+    "accessLevel": "5级",
+    "responsibleDepartment": "档案与研究部",
+    "leadPerson": "林知远博士",
+    "lastUpdate": "[数据删除]",
+    "description": "TMS-L0567是一个基于地点/空间的阈界（大类：L），表现为一处古代天文观测台遗迹，位于[数据删除]高原地区。该阈界的核心异常为一个持续性的\"神明坠落\"现象：每当夜幕降临，观测台上空会出现一个巨大的人形轮廓，以极其缓慢的速度从星空中坠落。长时间观察会导致观察者产生强烈的宗教创伤，表现为对一切神圣概念的彻底质疑、精神支柱的崩塌，以及对\"堕落\"概念的病态迷恋。",
+    "mainDangers": [
+      "宗教创伤",
+      "认知污染",
+      "堕落迷恋症候群",
+      "信息污染"
+    ],
+    "archiveNature": "基于地点/空间的阈界",
+    "coreFeatures": "古代天文观测台遗迹，夜间出现巨大坠落人形轮廓，引发宗教创伤",
+    "discoveryLocation": "[数据删除]高原地区的古代天文观测台遗迹",
+    "commonName": "一神坠入 / 神明坠落之地",
+    "relatedArchives": [
+      {
+        "code": "EXP-L0567",
+        "type": "勘探记录",
+        "title": "伽马队首次勘探记录",
+        "relation": "初次发现记录"
+      },
+      {
+        "code": "MED-L0567",
+        "type": "医疗报告",
+        "title": "认知影响分析报告",
+        "relation": "暴露人员心理评估"
+      },
+      {
+        "code": "THY-L0567",
+        "type": "理论文件",
+        "title": "\"神明坠落\"理论模型",
+        "relation": "异常机制分析"
+      }
+    ],
+    "phases": [
+      {
+        "name": "初始暴露",
+        "duration": "T+0-30min",
+        "mechanism": "视觉接触触发",
+        "manifestation": "目击坠落轮廓",
+        "target": "建立感知连接",
+        "keyIndicator": "瞳孔放大、心率升高"
+      },
+      {
+        "name": "神性共鸣",
+        "duration": "T+30min-2h",
+        "mechanism": "共情机制启动",
+        "manifestation": "感受\"神性失落\"",
+        "target": "建立情感连接",
+        "keyIndicator": "情绪波动、异常哭泣"
+      },
+      {
+        "name": "遗言接收",
+        "duration": "T+2-4h",
+        "mechanism": "信息污染传播",
+        "manifestation": "\"听到\"神明遗言",
+        "target": "传播认知污染",
+        "keyIndicator": "语言异常、重复性行为"
+      },
+      {
+        "name": "创伤固化",
+        "duration": "T+4h+",
+        "mechanism": "心理结构崩解",
+        "manifestation": "宗教创伤形成",
+        "target": "永久性认知改变",
+        "keyIndicator": "信仰崩塌、堕落迷恋"
+      }
+    ],
+    "environmentFeatures": {
+      "physical": [
+        "古代天文观测台遗迹",
+        "圆形石质平台",
+        "中央星象图案"
+      ],
+      "cognitive": [
+        "神性失落感",
+        "宗教创伤",
+        "堕落迷恋"
+      ]
+    },
+    "properties": [
+      {
+        "category": "物理结构",
+        "name": "古代天文观测台",
+        "description": "圆形石质平台，中央有复杂星象图案",
+        "scope": "低"
+      },
+      {
+        "category": "视觉异常",
+        "name": "坠落人形轮廓",
+        "description": "夜间出现巨大坠落人形轮廓，持续6-8小时",
+        "scope": "高"
+      },
+      {
+        "category": "心理效应",
+        "name": "宗教创伤",
+        "description": "神圣概念质疑、堕落迷恋症候群",
+        "scope": "极高"
+      },
+      {
+        "category": "信息污染",
+        "name": "\"神明遗言\"传播",
+        "description": "包含现实结构质疑内容",
+        "scope": "极高"
+      }
+    ],
+    "threatAssessments": [
+      {
+        "riskLevel": "极高",
+        "personnelType": "有宗教信仰者",
+        "susceptibilityReason": "宗教背景增强共情",
+        "recommendedAction": "禁止进入隔离区"
+      },
+      {
+        "riskLevel": "高",
+        "personnelType": "高共情能力者",
+        "susceptibilityReason": "易受\"神性失落\"感染",
+        "recommendedAction": "需通过宗教创伤抗性测试"
+      },
+      {
+        "riskLevel": "中",
+        "personnelType": "精神不稳定者",
+        "susceptibilityReason": "心理防线薄弱",
+        "recommendedAction": "严格筛选，禁止夜间观察"
+      }
+    ],
+    "protocols": [
+      {
+        "phase": "日常",
+        "procedureName": "时间隔离",
+        "measures": "日落至日出期间完全封锁",
+        "department": "安全与防护部"
+      },
+      {
+        "phase": "防护",
+        "procedureName": "视觉防护",
+        "measures": "自动光学干扰系统",
+        "department": "后勤与架构部"
+      },
+      {
+        "phase": "筛选",
+        "procedureName": "人员筛选",
+        "measures": "通过宗教创伤抗性测试",
+        "department": "医疗与心理部"
+      },
+      {
+        "phase": "应急",
+        "procedureName": "紧急响应",
+        "measures": "\"遗言\"传播迹象检测与信息封锁",
+        "department": "档案与研究部"
+      },
+      {
+        "phase": "心理",
+        "procedureName": "心理防护",
+        "measures": "定期宗教创伤评估和治疗",
+        "department": "医疗与心理部"
+      }
+    ],
+    "remarks": "一神坠入(TMS-L0567)的\"神明坠落\"效应可能与全球性哲学模因相关，建议监控类似O类阈界。后续探索需由堡垒队执行。",
+    "reviewStatus": "通过",
+    "finalReview": "林知远博士 | [数据删除]"
   }
 ]

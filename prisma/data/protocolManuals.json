@@ -2,7 +2,7 @@
   {
     "code": "PRT-0001",
     "title": "档案编码规则",
-    "status": "在档",
+    "status": "封存",
     "threatLevel": null,
     "threatLevelColor": "",
     "archiveDate": "2025年9月6日",
@@ -63,7 +63,7 @@
       },
       {
         "title": "协议手册（PRT）",
-        "content": "格式：PRT-全局序号\n\n• 全局序号：4位数字，由档案与研究部统一分配，从0001开始递增，不区分部门\n\n示例：\n• PRT-0001：本文件《档案编码规则 v4.0》\n• PRT-0002：实验室安全操作规程\n• PRT-0003：阈界分类标准\n\n注：协议手册不再体现具体名称或版本号，名称和版本号在档案标题中记录。"
+        "content": "格式：PRT-全局序号\n\n• 全局序号：4位数字，由档案与研究部统一分配，从0001开始递增，不区分部门\n\n示例：\n• PRT-0001：本文件《档案编码规则 v4.0》\n• PRT-0002：实验室安全操作规程\n• PRT-0003：阈界分类标准\n\n注：协议手册不再体现具体名称或版本号，名称和版本号活跃案标题中记录。"
       },
       {
         "title": "阈界编码规则",
@@ -86,7 +86,7 @@
   {
     "code": "PRT-0002",
     "title": "代码查询手册",
-    "status": "在档",
+    "status": "封存",
     "threatLevel": null,
     "threatLevelColor": "",
     "archiveDate": "2025年9月4日",
@@ -122,7 +122,7 @@
   {
     "code": "PRT-0003",
     "title": "实验室安全操作规程",
-    "status": "在档",
+    "status": "封存",
     "threatLevel": null,
     "threatLevelColor": "",
     "archiveDate": "[数据删除]",
@@ -158,7 +158,7 @@
   {
     "code": "PRT-0004",
     "title": "档案管理规范",
-    "status": "在档",
+    "status": "封存",
     "threatLevel": null,
     "threatLevelColor": "",
     "archiveDate": "2025年9月4日",
@@ -198,7 +198,7 @@
   {
     "code": "PRT-0005",
     "title": "阈界分类标准",
-    "status": "在档",
+    "status": "封存",
     "threatLevel": null,
     "threatLevelColor": "",
     "archiveDate": "2025年9月4日",
@@ -227,7 +227,7 @@
       },
       {
         "title": "混合类型处理",
-        "content": "当阈界具有多种类型特征时：\n1. 选择最主要的特征作为分类代码\n2. 在档案描述中注明其他特征\n3. 必要时建立关联档案\n\n示例：TMS-L0234（明知山）同时具有空间异常（L）和认知危害（C）特征，以L为主分类，在档案中注明C特征。"
+        "content": "当阈界具有多种类型特征时：\n1. 选择最主要的特征作为分类代码\n2. 活跃案描述中注明其他特征\n3. 必要时建立关联档案\n\n示例：TMS-L0234（明知山）同时具有空间异常（L）和认知危害（C）特征，以L为主分类，活跃案中注明C特征。"
       }
     ]
   }

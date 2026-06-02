@@ -337,6 +337,21 @@ router.get('/personnel', async (_req, res) => {
   }
 })
 
+// GET /api/v1/cms/personnel/:id - 获取单个人员
+router.get("/personnel/:id", async (req, res) => {
+  try {
+    const id = parseInt(req.params.id)
+    const person = await prisma.personnel.findUnique({
+      where: { id },
+      include: { department: true },
+    })
+    if (!person) return res.status(404).json({ error: "Personnel not found" })
+    res.json(person)
+  } catch (err: any) {
+    res.status(500).json({ error: err.message })
+  }
+})
+
 // POST /api/v1/cms/personnel - 创建人员
 router.post('/personnel', async (req, res) => {
   try {

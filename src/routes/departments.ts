@@ -1,6 +1,16 @@
 import { Router } from 'express'
 import { prisma } from '../lib/prisma'
 
+// PRT-0001 v4.0 对齐后的正确部门编码（覆盖 DB 旧值）
+const DEPT_CODE_MAP: Record<string, string> = {
+  '最高指挥部': 'DEPT-10',
+  '外勤行动部': 'DEPT-20',
+  '档案与研究部': 'DEPT-30',
+  '医疗与心理部': 'DEPT-40',
+  '安全与防护部': 'DEPT-50',
+  '后勤与架构部': 'DEPT-60',
+}
+
 const router = Router()
 
 // 列表
@@ -9,7 +19,12 @@ router.get('/', async (req, res) => {
     include: { leader: true, _count: { select: { personnel: true } } },
     orderBy: { code: 'asc' },
   })
-  res.json(depts)
+  // 用正确编码覆盖 DB 旧值
+  const corrected = depts.map(d => ({
+    ...d,
+    code: DEPT_CODE_MAP[d.name] || d.code,
+  }))
+  res.json(corrected)
 })
 
 // 详情

@@ -322,6 +322,67 @@ router.delete('/announcements/:id', async (req, res) => {
   }
 })
 
+// ======== 人事管理 ========
+
+// GET /api/v1/cms/personnel - 获取所有人员
+router.get('/personnel', async (_req, res) => {
+  try {
+    const personnel = await prisma.personnel.findMany({
+      include: { department: true },
+      orderBy: { code: 'asc' },
+    })
+    res.json(personnel)
+  } catch (err: any) {
+    res.status(500).json({ error: err.message })
+  }
+})
+
+// POST /api/v1/cms/personnel - 创建人员
+router.post('/personnel', async (req, res) => {
+  try {
+    const { code, name, nameEn, title, codename, departmentId, position, status, specialty, clearanceLevel, esigCode } = req.body
+    const person = await prisma.personnel.create({
+      data: {
+        code, name, nameEn, title, codename,
+        departmentId: departmentId ? Number(departmentId) : null,
+        position, status, specialty,
+        clearanceLevel: clearanceLevel ? Number(clearanceLevel) : 1,
+        esigCode,
+      },
+    })
+    res.status(201).json(person)
+  } catch (err: any) {
+    res.status(500).json({ error: err.message })
+  }
+})
+
+// PUT /api/v1/cms/personnel/:id - 更新人员
+router.put('/personnel/:id', async (req, res) => {
+  try {
+    const { id } = req.params
+    const data = req.body
+    if (data.departmentId) data.departmentId = Number(data.departmentId)
+    if (data.clearanceLevel) data.clearanceLevel = Number(data.clearanceLevel)
+    const person = await prisma.personnel.update({
+      where: { id: Number(id) },
+      data,
+    })
+    res.json(person)
+  } catch (err: any) {
+    res.status(500).json({ error: err.message })
+  }
+})
+
+// DELETE /api/v1/cms/personnel/:id - 删除人员
+router.delete('/personnel/:id', async (req, res) => {
+  try {
+    await prisma.personnel.delete({ where: { id: Number(req.params.id) } })
+    res.json({ success: true })
+  } catch (err: any) {
+    res.status(500).json({ error: err.message })
+  }
+})
+
 // ======== 统计仪表盘 ========
 
 // GET /api/v1/cms/stats - 获取后台统计数据

@@ -232,6 +232,12 @@ async function main() {
 
       archiveData.attachmentText = item.attachmentText || null
 
+      // 阈界档案默认资源路径
+      if (category === '阈界档案') {
+        if (!archiveData.imagePath) archiveData.imagePath = `/api/v1/uploads/${item.code}.png`
+        if (!archiveData.videoPath) archiveData.videoPath = `/api/v1/uploads/${item.code}.mp4`
+      }
+
       // 清理 undefined
       Object.keys(details).forEach(key => {
         if (details[key] === undefined) delete details[key]

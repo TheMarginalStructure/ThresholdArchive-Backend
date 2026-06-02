@@ -23,10 +23,19 @@ router.get('/categories', async (_req, res) => {
       _count: { id: true },
       orderBy: { _count: { id: 'desc' } },
     })
-    const categories = grouped.map(g => ({
+    // 合并旧分类"勘探实验记录"→"勘探记录"
+    const merged = new Map<string, { category: string; count: number }>()
+    for (const g of grouped) {
+      const key = g.category === '勘探实验记录' ? '勘探记录' : g.category
+      merged.set(key, {
+        category: key,
+        count: (merged.get(key)?.count || 0) + g._count.id,
+      })
+    }
+    const categories = Array.from(merged.values()).map(g => ({
       category: g.category,
       code: categoryCodeMap[g.category] || g.category.slice(0, 3).toUpperCase(),
-      count: g._count.id,
+      count: g.count,
     }))
     res.json(categories)
   } catch (err: any) {

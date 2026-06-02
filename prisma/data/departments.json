@@ -5,7 +5,7 @@
     "nameEn": "High Command",
     "type": "指挥",
     "siteLocation": "Site-01",
-    "internalChannel": "DEPT-00-COM"
+    "internalChannel": "DEPT-10-COM"
   },
   {
     "code": "DEPT-30",
@@ -13,7 +13,7 @@
     "nameEn": "Research & Archives",
     "type": "研究",
     "siteLocation": "Site-01",
-    "internalChannel": "DEPT-10-COM"
+    "internalChannel": "DEPT-30-COM"
   },
   {
     "code": "DEPT-20",
@@ -29,7 +29,7 @@
     "nameEn": "Medical & Psychology",
     "type": "医疗",
     "siteLocation": "Site-02",
-    "internalChannel": "DEPT-30-COM"
+    "internalChannel": "DEPT-40-COM"
   },
   {
     "code": "DEPT-50",
@@ -37,7 +37,7 @@
     "nameEn": "Security & Protection",
     "type": "安全",
     "siteLocation": "Site-01",
-    "internalChannel": "DEPT-40-COM"
+    "internalChannel": "DEPT-50-COM"
   },
   {
     "code": "DEPT-60",
@@ -45,6 +45,6 @@
     "nameEn": "Logistics & Infrastructure",
     "type": "后勤",
     "siteLocation": "Site-05",
-    "internalChannel": "DEPT-50-COM"
+    "internalChannel": "DEPT-60-COM"
   }
 ]

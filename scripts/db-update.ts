@@ -19,29 +19,7 @@ const prisma = new PrismaClient()
 async function update() {
   // ========================================
   // 在此区域内编写更新逻辑
-  // 示例：更新部门编码
   // ========================================
-
-  /*
-  // ---- 示例 1: 更新单个字段 ----
-  const r1 = await prisma.department.update({
-    where: { code: 'DEPT-00' },
-    data: { code: 'DEPT-10' },
-  })
-  console.log(`更新部门: ${r1.name} ${r1.code}`)
-
-  // ---- 示例 2: 按条件批量更新 ----
-  const r2 = await prisma.archive.updateMany({
-    where: {
-      category: '阈界档案',
-      imagePath: null,
-    },
-    data: {
-      imagePath: '/api/v1/uploads/default.png',
-    },
-  })
-  console.log(`更新 ${r2.count} 个档案的 imagePath`)
-  */
 
   // ========================================
   // 在此之上编写更新逻辑

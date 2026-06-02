@@ -10,7 +10,7 @@
     "specialty": "战略指挥、组织管理",
     "clearanceLevel": 5,
     "esigCode": "ESIG-IP",
-    "departmentCode": "DEPT-10"
+    "departmentCode": "DEPT-00"
   },
   {
     "code": "HR-001002",
@@ -23,7 +23,7 @@
     "specialty": "档案学、异常分类学",
     "clearanceLevel": 4,
     "esigCode": "ESIG-CW",
-    "departmentCode": "DEPT-30"
+    "departmentCode": "DEPT-10"
   },
   {
     "code": "HR-001003",
@@ -36,7 +36,7 @@
     "specialty": "档案编码、跨学科研究",
     "clearanceLevel": 4,
     "esigCode": "ESIG-AS",
-    "departmentCode": "DEPT-30"
+    "departmentCode": "DEPT-10"
   },
   {
     "code": "HR-001004",
@@ -49,7 +49,7 @@
     "specialty": "认知危害、模因学",
     "clearanceLevel": 4,
     "esigCode": "ESIG-LZ",
-    "departmentCode": "DEPT-30"
+    "departmentCode": "DEPT-10"
   },
   {
     "code": "HR-001005",
@@ -62,7 +62,7 @@
     "specialty": "神经病理学、阈界暴露后遗症",
     "clearanceLevel": 3,
     "esigCode": "ESIG-ES",
-    "departmentCode": "DEPT-40"
+    "departmentCode": "DEPT-30"
   },
   {
     "code": "HR-001006",
@@ -75,7 +75,7 @@
     "specialty": "空间异常、非欧几何",
     "clearanceLevel": 3,
     "esigCode": "ESIG-AK",
-    "departmentCode": "DEPT-30"
+    "departmentCode": "DEPT-10"
   },
   {
     "code": "HR-001007",
@@ -88,7 +88,59 @@
     "specialty": "生物异常、实体接触",
     "clearanceLevel": 3,
     "esigCode": "ESIG-AC",
-    "departmentCode": "DEPT-30"
+    "departmentCode": "DEPT-10"
+  },
+  {
+    "code": "HR-001008",
+    "name": "索菲亚·罗德里格斯",
+    "nameEn": "Sofia Rodriguez",
+    "title": "副总指挥",
+    "codename": null,
+    "position": "副总指挥",
+    "status": "现役",
+    "specialty": "日常运营、危机协调",
+    "clearanceLevel": 5,
+    "esigCode": "ESIG-SR",
+    "departmentCode": "DEPT-00"
+  },
+  {
+    "code": "HR-001009",
+    "name": "哈维尔·冈萨雷斯",
+    "nameEn": "Javier Gonzalez",
+    "title": "博士",
+    "codename": null,
+    "position": "科学顾问",
+    "status": "现役",
+    "specialty": "跨学科研究监督",
+    "clearanceLevel": 5,
+    "esigCode": "ESIG-JG",
+    "departmentCode": "DEPT-00"
+  },
+  {
+    "code": "HR-001010",
+    "name": "娜塔莉·李",
+    "nameEn": "Natalie Li",
+    "title": null,
+    "codename": null,
+    "position": "安全顾问",
+    "status": "现役",
+    "specialty": "组织整体威胁评估",
+    "clearanceLevel": 5,
+    "esigCode": "ESIG-NL",
+    "departmentCode": "DEPT-00"
+  },
+  {
+    "code": "HR-001011",
+    "name": "马克西姆·科瓦列夫",
+    "nameEn": "Maxim Kovalev",
+    "title": null,
+    "codename": null,
+    "position": "数据主管",
+    "status": "现役",
+    "specialty": "数据管理、信息系统",
+    "clearanceLevel": 3,
+    "esigCode": "ESIG-MK",
+    "departmentCode": "DEPT-10"
   },
   {
     "code": "HR-002001",
@@ -234,6 +286,110 @@
     "departmentCode": "DEPT-20"
   },
   {
+    "code": "HR-002012",
+    "name": "[代号：堡垒]",
+    "nameEn": "Fortress",
+    "title": "外勤探员",
+    "codename": "堡垒",
+    "position": "外勤探员",
+    "status": "现役",
+    "specialty": "高危环境与实体接触",
+    "clearanceLevel": 3,
+    "esigCode": "ESIG-FT",
+    "departmentCode": "DEPT-20"
+  },
+  {
+    "code": "HR-002013",
+    "name": "亚历山大·科瓦尔",
+    "nameEn": "Alexander Koval",
+    "title": "部长",
+    "codename": null,
+    "position": "外勤行动部部长",
+    "status": "现役",
+    "specialty": "外勤指挥、战术部署",
+    "clearanceLevel": 5,
+    "esigCode": "ESIG-AK3",
+    "departmentCode": "DEPT-20"
+  },
+  {
+    "code": "HR-002014",
+    "name": "奥利弗·王",
+    "nameEn": "Oliver Wang",
+    "title": "队长",
+    "codename": null,
+    "position": "外勤队长",
+    "status": "现役",
+    "specialty": "阈界空间导航、战术侦察",
+    "clearanceLevel": 3,
+    "esigCode": "ESIG-OW",
+    "departmentCode": "DEPT-20"
+  },
+  {
+    "code": "HR-002015",
+    "name": "丽萨·张",
+    "nameEn": "Lisa Zhang",
+    "title": "队长",
+    "codename": null,
+    "position": "外勤队长",
+    "status": "现役",
+    "specialty": "复杂环境渗透、通信协调",
+    "clearanceLevel": 3,
+    "esigCode": "ESIG-LZ2",
+    "departmentCode": "DEPT-20"
+  },
+  {
+    "code": "HR-002016",
+    "name": "维克多·彼得罗夫",
+    "nameEn": "Victor Petrov",
+    "title": "锁匠",
+    "codename": "锁匠",
+    "position": "外勤队长",
+    "status": "现役",
+    "specialty": "连接点建立与维护、阈界工程",
+    "clearanceLevel": 4,
+    "esigCode": "ESIG-VP",
+    "departmentCode": "DEPT-20"
+  },
+  {
+    "code": "HR-002017",
+    "name": "乔治·马丁",
+    "nameEn": "George Martin",
+    "title": null,
+    "codename": null,
+    "position": "联络官",
+    "status": "现役",
+    "specialty": "跨部门协调、对外联络",
+    "clearanceLevel": 3,
+    "esigCode": "ESIG-GM",
+    "departmentCode": "DEPT-20"
+  },
+  {
+    "code": "HR-002018",
+    "name": "玛丽亚·冈萨雷斯",
+    "nameEn": "Maria Gonzalez",
+    "title": null,
+    "codename": null,
+    "position": "情报分析师",
+    "status": "现役",
+    "specialty": "情报分析、威胁评估",
+    "clearanceLevel": 3,
+    "esigCode": "ESIG-MG",
+    "departmentCode": "DEPT-20"
+  },
+  {
+    "code": "HR-002019",
+    "name": "卡洛斯·桑切斯",
+    "nameEn": "Carlos Sanchez",
+    "title": "训练主管",
+    "codename": null,
+    "position": "训练主管",
+    "status": "现役",
+    "specialty": "外勤训练、战斗技巧",
+    "clearanceLevel": 3,
+    "esigCode": "ESIG-CS",
+    "departmentCode": "DEPT-20"
+  },
+  {
     "code": "HR-003001",
     "name": "戴维·卡特",
     "nameEn": "David Carter",
@@ -244,7 +400,7 @@
     "specialty": "神经心理学、阈界精神病学",
     "clearanceLevel": 4,
     "esigCode": "ESIG-DC",
-    "departmentCode": "DEPT-40"
+    "departmentCode": "DEPT-30"
   },
   {
     "code": "HR-003002",
@@ -257,7 +413,20 @@
     "specialty": "心理评估",
     "clearanceLevel": 3,
     "esigCode": "ESIG-JJ",
-    "departmentCode": "DEPT-40"
+    "departmentCode": "DEPT-30"
+  },
+  {
+    "code": "HR-003003",
+    "name": "詹姆斯·帕克",
+    "nameEn": "James Parker",
+    "title": "博士",
+    "codename": null,
+    "position": "心理治疗主管",
+    "status": "现役",
+    "specialty": "创伤心理治疗、认知危害康复",
+    "clearanceLevel": 4,
+    "esigCode": "ESIG-JP",
+    "departmentCode": "DEPT-30"
   },
   {
     "code": "HR-004001",
@@ -270,7 +439,7 @@
     "specialty": "实验室安全、防护协议",
     "clearanceLevel": 4,
     "esigCode": "ESIG-EC",
-    "departmentCode": "DEPT-50"
+    "departmentCode": "DEPT-40"
   },
   {
     "code": "HR-004002",
@@ -283,19 +452,58 @@
     "specialty": "物理防护、安全架构",
     "clearanceLevel": 4,
     "esigCode": "ESIG-VK",
+    "departmentCode": "DEPT-40"
+  },
+  {
+    "code": "HR-004003",
+    "name": "莎拉·布莱克伍德",
+    "nameEn": "Sarah Blackwood",
+    "title": null,
+    "codename": null,
+    "position": "安全与防护部副部长",
+    "status": "现役",
+    "specialty": "设施安全、人员安保管理",
+    "clearanceLevel": 4,
+    "esigCode": "ESIG-SB",
+    "departmentCode": "DEPT-40"
+  },
+  {
+    "code": "HR-004004",
+    "name": "马库斯·斯通",
+    "nameEn": "Marcus Stone",
+    "title": "应急响应主管",
+    "codename": "哨兵",
+    "position": "应急响应主管",
+    "status": "现役",
+    "specialty": "应急响应、威胁处置",
+    "clearanceLevel": 4,
+    "esigCode": "ESIG-MS",
+    "departmentCode": "DEPT-40"
+  },
+  {
+    "code": "HR-005001",
+    "name": "彼得·安德森",
+    "nameEn": "Peter Anderson",
+    "title": "部长",
+    "codename": null,
+    "position": "后勤与架构部部长",
+    "status": "现役",
+    "specialty": "架构规划、资源管理",
+    "clearanceLevel": 4,
+    "esigCode": "ESIG-PA",
     "departmentCode": "DEPT-50"
   },
   {
-    "code": "HR-002012",
-    "name": "[代号：堡垒]",
-    "nameEn": "Fortress",
-    "title": "外勤探员",
-    "codename": "堡垒",
-    "position": "外勤探员",
+    "code": "HR-005002",
+    "name": "奥尔加·波波娃",
+    "nameEn": "Olga Popova",
+    "title": null,
+    "codename": null,
+    "position": "后勤与架构部副部长",
     "status": "现役",
-    "specialty": "高危环境与实体接触",
+    "specialty": "物资调配、后勤管理",
     "clearanceLevel": 3,
-    "esigCode": "ESIG-FT",
-    "departmentCode": "DEPT-20"
+    "esigCode": "ESIG-OP",
+    "departmentCode": "DEPT-50"
   }
 ]

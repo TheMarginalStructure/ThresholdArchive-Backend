@@ -3,111 +3,54 @@
  * 用法：npx tsx scripts/validate-schema.ts
  *
  * 校验所有 JSON 数据文件中的字段名是否与前端渲染期望一致。
- * 在 seed 前运行此脚本可提前发现字段名不匹配问题。
+ * 运行时校验已在 cms.ts 中集成，此脚本用于离线批量检查。
  */
 
 import * as fs from 'fs'
 import * as path from 'path'
+import { validateDetails } from '../src/lib/details-validator'
 
-interface FieldRule {
-  name: string       // 字段名
-  type: string       // 'string' | 'array' | 'object'
-  required?: boolean
-  subFields?: { name: string; type: string }[]
-}
+const DATA_DIR = path.join(__dirname, '..', 'prisma', 'data')
+const FILE_CATEGORIES: [string, string][] = [
+  ['threatFiles.json', '阈界档案'],
+  ['objectArchives.json', '对象档案'],
+  ['explorationLogs.json', '勘探记录'],
+  ['incidentReports.json', '事件报告'],
+  ['experimentLogs.json', '实验记录'],
+]
 
-// 每种档案类型的 details 字段规则
-const SCHEMA: Record<string, FieldRule[]> = {
-  '阈界档案': [
-    { name: 'protocols', type: 'array', subFields: [
-      { name: 'phase', type: 'string' },
-      { name: 'procedureName', type: 'string' },
-      { name: 'measures', type: 'string' },
-      { name: 'department', type: 'string' },
-    ]},
-    { name: 'accessRequirements', type: 'array', subFields: [
-      { name: 'allowed', type: 'boolean' },
-      { name: 'text', type: 'string' },
-    ]},
-    { name: 'emergencyProcedures', type: 'array', subFields: [
-      { name: 'allowed', type: 'boolean' },
-      { name: 'text', 'type': 'string' },
-    ]},
-    { name: 'behaviorGuidelines', type: 'array', subFields: [
-      { name: 'allowed', type: 'boolean' },
-      { name: 'text', type: 'string' },
-    ]},
-    { name: 'properties', type: 'array', subFields: [
-      { name: 'category', type: 'string' },
-      { name: 'name', type: 'string' },
-      { name: 'description', type: 'string' },
-      { name: 'scope', type: 'string' },
-    ]},
-    { name: 'phases', type: 'array', subFields: [
-      { name: 'name', type: 'string' },
-      { name: 'duration', type: 'string' },
-      { name: 'mechanism', type: 'string' },
-      { name: 'manifestation', type: 'string' },
-      { name: 'target', type: 'string' },
-      { name: 'keyIndicator', type: 'string' },
-    ]},
-  ],
-}
+let hasError = false
 
-function validate() {
-  const dataDir = path.join(__dirname, '..', 'prisma', 'data')
-  const files = [
-    { file: 'threatFiles.json', category: '阈界档案' },
-    { file: 'objectArchives.json', category: '对象档案' },
-    { file: 'explorationLogs.json', category: '勘探记录' },
-    { file: 'incidentReports.json', category: '事件报告' },
-    { file: 'experimentLogs.json', category: '实验记录' },
-  ]
+for (const [file, category] of FILE_CATEGORIES) {
+  const filePath = path.join(DATA_DIR, file)
+  if (!fs.existsSync(filePath)) continue
 
-  let hasError = false
-
-  for (const { file, category } of files) {
-    const filePath = path.join(dataDir, file)
-    if (!fs.existsSync(filePath)) continue
-
-    const items = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
-    const rules = SCHEMA[category]
-    if (!rules) continue
-
-    for (const item of items) {
-      for (const rule of rules) {
-        const value = item[rule.name]
-        if (value === undefined || value === null) continue
-
-        // Check array type
-        if (rule.type === 'array' && Array.isArray(value) && rule.subFields) {
-          for (const [i, entry] of value.entries()) {
-            for (const sub of rule.subFields) {
-              const actualType = typeof entry[sub.name]
-              if (actualType === 'undefined') {
-                console.error(`❌ ${item.code}.${rule.name}[${i}]: 缺少字段 "${sub.name}"（应为 ${sub.type}）`)
-                hasError = true
-              }
-            }
-            // Check for unknown fields (frontend wouldn't read them)
-            const knownKeys = new Set(rule.subFields.map(s => s.name))
-            for (const key of Object.keys(entry)) {
-              if (!knownKeys.has(key)) {
-                console.warn(`⚠️  ${item.code}.${rule.name}[${i}]: 未知字段 "${key}"，前端不会渲染`)
-              }
-            }
-          }
-        }
-      }
+  const items = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
+  for (const item of items) {
+    const errors = validateDetails(category, item)
+    for (const err of errors) {
+      console.error(`❌ ${item.code}.${err.path}: ${err.message}`)
+      hasError = true
     }
   }
+}
 
-  if (hasError) {
-    console.error('\n❌ 校验失败，请修复上述字段名不匹配问题')
-    process.exit(1)
-  } else {
-    console.log('✅ 所有档案数据字段名校验通过')
+// 也校验 protocolManuals.json 的 sections
+const pmPath = path.join(DATA_DIR, 'protocolManuals.json')
+if (fs.existsSync(pmPath)) {
+  const items = JSON.parse(fs.readFileSync(pmPath, 'utf-8'))
+  for (const item of items) {
+    const errors = validateDetails('协议手册', item)
+    for (const err of errors) {
+      console.error(`❌ ${item.code}.${err.path}: ${err.message}`)
+      hasError = true
+    }
   }
 }
 
-validate()
+if (hasError) {
+  console.error('\n❌ 校验失败，请修复上述字段名不匹配问题')
+  process.exit(1)
+} else {
+  console.log('✅ 所有档案数据字段名校验通过')
+}

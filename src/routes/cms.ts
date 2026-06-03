@@ -1,5 +1,6 @@
 import { Router } from 'express'
 import { prisma } from '../lib/prisma'
+import { validateDetails } from '../lib/details-validator'
 
 const router = Router()
 
@@ -28,6 +29,14 @@ router.post('/archives', async (req, res) => {
       sourceDepartmentId, responsibleDepartmentId, leadPersonId, signatures,
       customTemplate, useCustomTemplate, videoPath,
     } = req.body
+
+    // 校验 details 字段结构
+    if (details) {
+      const errs = validateDetails(category, details)
+      if (errs.length > 0) {
+        return res.status(400).json({ error: 'details 字段结构错误', fields: errs })
+      }
+    }
 
     const archive = await prisma.archive.create({
       data: {
@@ -71,6 +80,14 @@ router.put('/archives/:id', async (req, res) => {
       sourceDepartmentId, responsibleDepartmentId, leadPersonId, signatures,
       customTemplate, useCustomTemplate, videoPath,
     } = req.body
+
+    // 校验 details 字段结构
+    if (details) {
+      const errs = validateDetails(category, details)
+      if (errs.length > 0) {
+        return res.status(400).json({ error: 'details 字段结构错误', fields: errs })
+      }
+    }
 
     const updateData: any = {
       code, category, title, status,

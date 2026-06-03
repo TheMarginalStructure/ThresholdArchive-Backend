@@ -2166,78 +2166,70 @@
     "threatAssessments": [],
     "protocols": [
       {
-        "name": "声学防护协议",
-        "code": "ACP-442",
-        "description": "进入者需佩戴主动降噪耳罩与声波屏蔽器"
+        "phase": "进入前",
+        "procedureName": "声学防护协议",
+        "measures": "进入者需佩戴主动降噪耳罩与声波屏蔽器",
+        "department": "安全与防护部"
       },
       {
-        "name": "认知监测协议",
-        "code": "CMP-442",
-        "description": "实时监测心率、脑电波及瞳孔反应，异常时立即撤离"
+        "phase": "进入中",
+        "procedureName": "认知监测协议",
+        "measures": "实时监测心率、脑电波及瞳孔反应，异常时立即撤离",
+        "department": "医疗与心理部"
       },
       {
-        "name": "水晶操作协议",
-        "code": "CRY-442",
-        "description": "仅允许使用远程机械臂接触共鸣水晶，严禁直接物理接触"
+        "phase": "操作",
+        "procedureName": "水晶操作协议",
+        "measures": "仅允许使用远程机械臂接触共鸣水晶，严禁直接物理接触",
+        "department": "档案与研究部"
       },
       {
-        "name": "紧急撤离协议",
-        "code": "EVP-442",
-        "description": "任一接触者出现认知异常症状时，全员立即沿声波引导绳撤离"
+        "phase": "撤离",
+        "procedureName": "紧急撤离协议",
+        "measures": "任一接触者出现认知异常症状时，全员立即沿声波引导绳撤离",
+        "department": "外勤行动部"
       }
     ],
     "accessRequirements": [
       {
-        "level": "3级",
-        "description": "基础勘探许可"
+        "allowed": true,
+        "text": "基础勘探许可（3级）：允许进入回音殿堂进行初步观察与声学测量"
       },
       {
-        "level": "4级",
-        "description": "水晶操作与实验研究许可"
+        "allowed": false,
+        "text": "水晶操作与实验研究许可（4级）：允许使用远程机械臂操作共鸣水晶"
       },
       {
-        "level": "5级",
-        "description": "回音实体接触研究许可"
+        "allowed": false,
+        "text": "回音实体接触研究许可（5级）：允许在高强度共振状态下研究回音实体"
       }
     ],
     "emergencyProcedures": [
       {
-        "name": "认知污染应急",
-        "code": "COG-442",
-        "steps": [
-          "立即切断声源",
-          "佩戴隔音头盔",
-          "施用认知稳定剂",
-          "撤离至净化区"
-        ]
+        "allowed": true,
+        "text": "认知污染应急：立即切断声源 → 佩戴隔音头盔 → 施用认知稳定剂 → 撤离至净化区"
       },
       {
-        "name": "实体召唤应急",
-        "code": "ENT-442",
-        "steps": [
-          "停止所有共振操作",
-          "启动声波反相器",
-          "全员撤离",
-          "封锁入口"
-        ]
+        "allowed": true,
+        "text": "实体召唤应急：停止所有共振操作 → 启动声波反相器 → 全员撤离 → 封锁入口"
       }
     ],
     "behaviorGuidelines": [
       {
-        "rule": "严禁在回音殿堂内发出任何超过60分贝的声音",
-        "reason": "高强度声音可能触发不可控共振与实体召唤"
+        "allowed": false,
+        "text": "严禁在回音殿堂内发出任何超过60分贝的声音——可能触发不可控共振与实体召唤"
       },
       {
-        "rule": "进入者必须两人一组，保持视线接触",
-        "reason": "认知污染可能导致单人迷失方向"
+        "allowed": false,
+        "text": "进入者必须两人一组，保持视线接触——认知污染可能导致单人迷失方向"
       },
       {
-        "rule": "单次停留不得超过15分钟",
-        "reason": "超过15分钟认知污染风险急剧上升"
+        "allowed": false,
+        "text": "单次停留不得超过15分钟——超过15分钟认知污染风险急剧上升"
       },
       {
-        "rule": "严禁直接触碰共鸣水晶",
-        "reason": "直接接触可能触发认知污染与空间扭曲"
+        "allowed": false,
+        "text": "严禁直接触碰共鸣水晶——可能触发认知污染与空间扭曲"
       }
     ]
   }

@@ -87,6 +87,7 @@ model Archive {
   customTemplate          String?  @map("custom_template")  @default("")
   useCustomTemplate       Boolean  @default(false) @map("use_custom_template")
   videoPath               String?  @map("video_path")
+  logoSvg                 String?  @map("logo_svg")
   createdAt               DateTime @default(now()) @map("created_at")
 
   sourceDepartment        Department? @relation("SourceDepartment", fields: [sourceDepartmentId], references: [id])

@@ -27,7 +27,7 @@ router.post('/archives', async (req, res) => {
       archiveDate, accessLevel, description, mainDangers, details,
       finalReview, reviewStatus, remarks, imagePath, attachmentText,
       sourceDepartmentId, responsibleDepartmentId, leadPersonId, signatures,
-      customTemplate, useCustomTemplate, videoPath,
+      customTemplate, useCustomTemplate, videoPath, logoSvg,
     } = req.body
 
     // 校验 details 字段结构
@@ -49,6 +49,7 @@ router.post('/archives', async (req, res) => {
         customTemplate: customTemplate || '',
         useCustomTemplate: useCustomTemplate || false,
         videoPath: videoPath || null,
+        logoSvg: logoSvg || null,
         sourceDepartmentId: sourceDepartmentId ? Number(sourceDepartmentId) : null,
         responsibleDepartmentId: responsibleDepartmentId ? Number(responsibleDepartmentId) : null,
         leadPersonId: leadPersonId ? Number(leadPersonId) : null,
@@ -78,7 +79,7 @@ router.put('/archives/:id', async (req, res) => {
       archiveDate, accessLevel, description, mainDangers, details,
       finalReview, reviewStatus, remarks, imagePath, attachmentText,
       sourceDepartmentId, responsibleDepartmentId, leadPersonId, signatures,
-      customTemplate, useCustomTemplate, videoPath,
+      customTemplate, useCustomTemplate, videoPath, logoSvg,
     } = req.body
 
     // 校验 details 字段结构
@@ -101,6 +102,7 @@ router.put('/archives/:id', async (req, res) => {
     if (customTemplate !== undefined) updateData.customTemplate = customTemplate
     if (useCustomTemplate !== undefined) updateData.useCustomTemplate = useCustomTemplate
     if (videoPath !== undefined) updateData.videoPath = videoPath
+    if (logoSvg !== undefined) updateData.logoSvg = logoSvg
 
     if (sourceDepartmentId !== undefined) updateData.sourceDepartmentId = sourceDepartmentId ? Number(sourceDepartmentId) : null
     if (responsibleDepartmentId !== undefined) updateData.responsibleDepartmentId = responsibleDepartmentId ? Number(responsibleDepartmentId) : null

@@ -300,7 +300,16 @@ async function main() {
       if (!archive) continue
       for (const sig of item.signatures) {
         const personnelId = matchPersonnel(sig.name)
-        try {
+        const existing = await prisma.archiveSignature.findUnique({
+          where: {
+            archiveId_position_name: {
+              archiveId: archive.id,
+              position: sig.position || '',
+              name: sig.name || '',
+            },
+          },
+        })
+        if (!existing) {
           await prisma.archiveSignature.create({
             data: {
               archiveId: archive.id,
@@ -313,7 +322,7 @@ async function main() {
             },
           })
           signaturesCreated++
-        } catch (_) { /* 重复跳过 */ }
+        }
       }
     }
   }
